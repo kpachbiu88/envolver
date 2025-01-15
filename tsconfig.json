@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "jsx": "react-jsx"
+  },
+  "exclude": [
+    "node_modules/",
+  ]
+}

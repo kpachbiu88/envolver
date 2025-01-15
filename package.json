@@ -1,0 +1,35 @@
+{
+  "name": "envolver",
+  "version": "1.0.0",
+  "description": "Coding test assignment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpachbiu88/envolver.git"
+  },
+  "author": "Konstantin Nikoalev <twozebras.nikolaev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpachbiu88/envolver/issues"
+  },
+  "homepage": "https://github.com/kpachbiu88/envolver#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@kpachbiu/react-terminal": "^1.4.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}
