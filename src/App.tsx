@@ -1,7 +1,10 @@
-import { ReactTerminal } from '@kpachbiu/react-terminal'
+import { ReactTerminal } from 'react-terminal'
 
 import { fromNumeralRoman, fromRomanNumeral } from './modules/converter'
 import { validate } from './api/gemini'
+import { validateUsesRegex } from './modules/validator'
+
+const useGemini = import.meta.env.VITE_USE_GEMINI === 'true'
 
 const App: React.FC = () => {
   const commands = {
@@ -25,7 +28,11 @@ const App: React.FC = () => {
 				}
 				return fromNumeralRoman(num)
 			} else {
-				const validation = await validate(str)
+				str = str.toUpperCase()
+				const validation = useGemini
+					? await validate(str)
+					: validateUsesRegex(str)
+				console.log('validation', validation)
 				if (validation && validation.error) {
 					return validation.error_message
 				}

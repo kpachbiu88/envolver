@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { TerminalContextProvider } from '@kpachbiu/react-terminal'
+import { TerminalContextProvider } from 'react-terminal'
 
 import App from "./App"
 
